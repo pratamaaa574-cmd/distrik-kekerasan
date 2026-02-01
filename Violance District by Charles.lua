@@ -1244,17 +1244,17 @@ end
 
 -- Create Rayfield Window
 local Window = Rayfield:CreateWindow({
-    Name = "🎮 BANGTARR | Violence District v2.2",
+    Name = "🎮 CHARLESS | Violence District v2.2",
     LoadingTitle = "Loading Mobile-Compatible Script",
-    LoadingSubtitle = "by BangTarr | " .. (isMobile and "Mobile Mode" or "PC Mode"),
+    LoadingSubtitle = "by Charless | " .. (isMobile and "Mobile Mode" or "PC Mode"),
     ConfigurationSaving = {
         Enabled = true, -- Disable to prevent save file errors
         FolderName = nil,
         FileName = "ViolenceDistrictConfig"
     },
-    Whatsapp = {
+    Discord = {
         Enabled = false, -- Disabled to prevent notification errors
-        Invite = "https://chat.whatsapp.com/IH6Ruk3C7bmFBfvSNqLKFi?mode=hqrt1",
+        Invite = "https://discord.gg/4Gnbch26F",
         RememberJoins = false
     },
     KeySystem = false
@@ -1269,24 +1269,24 @@ CreditsTab:CreateLabel("Created by: CHARLESS")
 CreditsTab:CreateLabel("Version: 2.2 (Mobile Compatible)")
 CreditsTab:CreateLabel("🌟 Thank you for join Membership!")
 
-CreditsTab:CreateSection("💬 Whatsapp Community")
+CreditsTab:CreateSection("💬 Discord Community")
 
 CreditsTab:CreateLabel("Join for updates, support & more!")
-CreditsTab:CreateLabel("Whatsapp: https://chat.whatsapp.com/IH6Ruk3C7bmFBfvSNqLKFi?mode=hqrt1")
+CreditsTab:CreateLabel("Discord: https://discord.gg/4Gnbch26F")
 
 CreditsTab:CreateButton({
-    Name = "📋 Copy Whatsapp Invite Link",
+    Name = "📋 Copy Discord Invite Link",
     Callback = function()
-        local inviteLink = "https://chat.whatsapp.com/IH6Ruk3C7bmFBfvSNqLKFi?mode=hqrt1"
+        local inviteLink = "https://discord.gg/4Gnbch26F"
         
         local success = pcall(function()
             setclipboard(inviteLink)
         end)
         
         if success then
-            notify("Whatsapp Link Copied!", "https://chat.whatsapp.com/IH6Ruk3C7bmFBfvSNqLKFi?mode=hqrt1 copied to clipboard!", 4)
+            notify("Discord Link Copied!", "https://discord.gg/4Gnbch26F copied to clipboard!", 4)
         else
-            notify("Whatsapp Link", "https://chat.whatsapp.com/IH6Ruk3C7bmFBfvSNqLKFi?mode=hqrt1 - Copy this manually!", 5)
+            notify("Discord Link", "https://discord.gg/4Gnbch26F - Copy this manually!", 5)
         end
     end
 })
@@ -1294,7 +1294,7 @@ CreditsTab:CreateButton({
 if isMobile then
     CreditsTab:CreateLabel("")
     CreditsTab:CreateLabel("📱 Mobile Tip: Link copied!")
-    CreditsTab:CreateLabel("Paste in Whatsapp app or browser")
+    CreditsTab:CreateLabel("Paste in Discord app or browser")
 end
 
 CreditsTab:CreateSection("📊 Script Information")
@@ -2306,3 +2306,4 @@ print("- ✅ Fixed notification errors")
 print("- ✅ Disabled config saving to prevent errors")
 
 print("=========================================")
+
