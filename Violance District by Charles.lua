@@ -1265,7 +1265,7 @@ local CreditsTab = Window:CreateTab("ℹ️ Credits & Info", 4483362458)
 
 CreditsTab:CreateSection("👤 Main Developer")
 
-CreditsTab:CreateLabel("Created by: BANGTARR")
+CreditsTab:CreateLabel("Created by: CHARLESS")
 CreditsTab:CreateLabel("Version: 2.2 (Mobile Compatible)")
 CreditsTab:CreateLabel("🌟 Thank you for join Membership!")
 
@@ -2304,4 +2304,5 @@ print("- ✅ iOS/Android support")
 print("- ✅ Performance optimizations for mobile")
 print("- ✅ Fixed notification errors")
 print("- ✅ Disabled config saving to prevent errors")
+
 print("=========================================")
